@@ -1,0 +1,78 @@
+canvas {
+    margin-top: 0px;
+    margin-bottom: -4px;
+    margin-right: -2px;
+    margin-left: -2px;
+    /* border: 3px solid black; */
+    /*	position: absolute; */
+    /* 	transform: rotateX(180deg);
+	transform: rotateY(180deg); */
+}
+
+.first {
+    /*	display: inline-block; */
+}
+
+.second {
+    /* transform: rotateY(180deg); */
+}
+
+.third {
+    /* transform: rotateX(180deg); */
+}
+
+.forth {
+    /* transform: rotate(180deg); */
+}
+
+#formContainer {
+    display: block;
+    position: static;
+    margin-bottom: 5px;
+}
+
+/* Slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 26px;
+    margin-top: -4px;
+    vertical-align: middle;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    left: 6px;
+    bottom: 3px;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(22px);
+}

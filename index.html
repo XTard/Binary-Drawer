@@ -1,0 +1,60 @@
+<html>
+
+    <head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="custom.css">
+		<script src="app.js" defer="defer"></script>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <div id="formContainer">
+            <form id="myForm">
+                <select name="formSelectColumns" disabled>
+					<option value="2">2</option>
+					<option value="4">4</option>
+					<option value="8" selected>8</option>
+				</select>
+                <select name="formSelectRows" disabled>
+					<option value="2">2</option>
+					<option value="4">4</option>
+					<option value="8" selected>8</option>
+				</select>
+                <select name="formSelectSize">
+					<option value="25">25</option>
+					<option value="33">33</option>
+					<option value="50" selected>50</option>
+				</select>
+                <input type="text" name="formInputWord" placeholder="Type here">&nbsp;One Color
+                <label class="colorPicker">
+	                <input type="color" name="formOneColor" value="#000000">&nbsp;Zero Color
+				</label>
+                <input type="color" name="formZeroColor" value="#ffffff">&nbsp;Axis Color
+                <input type="color" name="formAxisColor" value="#ffff00">&nbsp;Show Axis
+                <label class="switch">
+					<input type="checkbox" name="formShowAxis" checked>
+					<span class="slider"></span>
+				</label>&nbsp;Show Grid
+                <label class="switch">
+					<input type="checkbox" name="formShowGrid" checked>
+					<span class="slider"></span>
+				</label>&nbsp;Render as one
+                <label class="switch">
+					<input type="checkbox" name="formRenderTogether" checked disabled>
+					<span class="slider"></span>
+				</label>
+            </form>
+        </div>
+        <div id="canvasContainer">
+            <div id="topCanvasContainer">
+                <canvas id="myCanvas" class="first"></canvas>
+                <!-- <canvas id="myCanvas" class="second"></canvas> -->
+            </div>
+            <div id="bottomCanvasContainer">
+                <!-- <canvas id="myCanvas" class="third"></canvas> -->
+                <!-- <canvas id="myCanvas" class="forth"></canvas> -->
+            </div>
+        </div>
+    </body>
+
+</html>
